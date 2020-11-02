@@ -8,11 +8,58 @@ main {
   font-family: "Heebo", sans-serif;
 }
 
+section {
+  padding: 3em;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+}
+
 .landing {
-  min-height: 100vh;
-  background: url("./photo.jpg");
-  background-size: cover;
-  padding: 0rem 2rem;
+  background-color: rgb(148, 172, 179);
+}
+
+.landing2 {
+  background-color: rgb(82, 103, 109);
+}
+
+.landing3 {
+  background-color: rgb(56, 75, 80);
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: black;
+  width: 0%;
+}
+
+.quote {
+  font-size: 1.5em;
+  width: 30%;
+  margin-top: 10%;
+  position: absolute;
+}
+
+.quote2 {
+  font-size: 1.5em;
+  width: auto;
+  margin-top: 30%;
+  position: absolute;
+}
+
+.cursive {
+  font-style: italic;
+}
+
+.sticky {
+  background: white !important;
+  color: black;
 }
 
 .big-text {
@@ -25,6 +72,8 @@ main {
   color: white;
 }
 
+/* INTRO */
+
 .intro {
   background: black;
   position: fixed;
@@ -36,20 +85,36 @@ main {
   justify-content: center;
   align-items: center;
 }
-.slider {
-  background: rgb(242, 250, 229);
-  position: fixed;
-  top: 0;
-  left: 0;
+
+.intro button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: white;
+  color: black;
+  font-family: "Lobster", cursive;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 40px;
+}
+
+.intro-button {
+  margin-top: 50px;
   width: 100%;
-  height: 100%;
-  transform: translateY(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-text {
   color: rgb(233, 233, 233);
   font-family: "Heebo", sans-serif;
   font-size: 3rem;
+  width: 100%;
+}
+
+.intro-text h1 {
+  text-align: center;
 }
 
 .hide {
